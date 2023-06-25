@@ -34,7 +34,7 @@ export default function Home() {
             ></Image>
           </div>
           <div className="">
-            <h2 className="text-l font-bold tracking-tight text-white sm:text-[5rem]">
+            <h2 className="text-l font-bold tracking-tight text-white sm:text-[4rem]">
               Explore the chicken nugget world!
             </h2>
           </div>
