@@ -50,9 +50,9 @@ export default function Home() {
             Vote in the chicken nugget competition!
           </p>
         </div>
-        <button className={btn}>
-          <Link href="/vote">Vote</Link>
-        </button>
+        <Link href="/vote">
+          <button className={btn}>Vote</button>
+        </Link>
         <Image
           src="/images/more-nuggets.png"
           width={620}
