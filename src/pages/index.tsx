@@ -24,7 +24,16 @@ export default function Home() {
       <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#ff0b0b] to-[#116675]">
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
           <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-            Chicken <span className="text-[hsl(49,86%,58%)] ">Nugget</span> App
+            Chicken
+            <span className="text-[hsl(49,86%,58%)]">
+              <span className="animation-delay-100 animate-bounce"> N</span>
+              <span className="animation-delay-200 animate-bounce">u</span>
+              <span className="animation-delay-300 animate-bounce">g</span>
+              <span className="animation-delay-400 animate-bounce">g</span>
+              <span className="animation-delay-500 animate-bounce">e</span>
+              <span className="animation-delay-600 animate-bounce">t </span>
+            </span>
+            App
           </h1>
           <div className="">
             <Image

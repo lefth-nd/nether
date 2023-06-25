@@ -8,6 +8,10 @@ export default function Vote() {
   const btn =
     "rounded-full bg-white/10 px-10 py-3 font-semibold text-white no-underline transition hover:bg-white/20 mt-8";
 
+  const first = "/images/basic-nugget.png";
+
+  const second = "/images/pizza.png";
+
   return (
     <div className={main}>
       <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
@@ -23,23 +27,13 @@ export default function Vote() {
       <div className="mt-11 grid grid-cols-2 grid-rows-1 gap-4">
         <div className="text-center">
           <div className="">
-            <Image
-              src="/images/basic-nugget.png"
-              width={320}
-              height={320}
-              alt="nugget"
-            ></Image>
+            <Image src={first} width={320} height={320} alt="nugget"></Image>
           </div>
           <button className={btn}>Vote</button>
         </div>
         <div className="text-center">
           <div className="">
-            <Image
-              src="/images/pizza.png"
-              width={320}
-              height={320}
-              alt="other"
-            ></Image>
+            <Image src={second} width={320} height={320} alt="other"></Image>
           </div>
           <button className={btn}>Vote</button>
         </div>
