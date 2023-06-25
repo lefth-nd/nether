@@ -35,7 +35,7 @@ export default function Home() {
             ></Image>
           </div>
           <div className="">
-            <h2 className="text-l font-bold tracking-tight text-white sm:text-[4rem]">
+            <h2 className="text-l animate-bounce font-bold tracking-tight text-white sm:text-[4rem]">
               Explore the chicken nugget world!
             </h2>
           </div>
@@ -57,14 +57,14 @@ export default function Home() {
         <RotatingImage />
         <div className="py-32"></div>
         <div className="">
-          <h2 className="text-l font-bold tracking-tight text-white sm:text-[5rem]">
+          <h2 className="text-l animate-bounce font-bold tracking-tight text-white sm:text-[5rem]">
             Why are chicken nuggets so good?
           </h2>
         </div>
         <Timeline />
         <div className="py-32"></div>
         <div className="text-center">
-          <h2 className="text-l font-bold tracking-tight text-white sm:text-[5rem]">
+          <h2 className="text-l animate-bounce font-bold tracking-tight text-white sm:text-[5rem]">
             What shape should chicken nuggets never be?
           </h2>
           <p className="text-6xl font-bold text-[hsl(49,86%,58%)]">Triangle!</p>
@@ -76,7 +76,7 @@ export default function Home() {
           alt="red-x"
         ></Image>
         <div className="text-center">
-          <h2 className="text-l font-bold tracking-tight text-white sm:text-[5rem]">
+          <h2 className="text-l animate-bounce font-bold tracking-tight text-white sm:text-[5rem]">
             Who has the best chicken nuggets?
           </h2>
         </div>
