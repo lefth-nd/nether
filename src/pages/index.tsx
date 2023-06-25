@@ -4,6 +4,7 @@ import Link from "next/link";
 import { api } from "~/utils/api";
 import { Timeline } from "~/components/timeline";
 import Image from "next/image";
+import { RotatingImage } from "~/components/rotating-image";
 
 export default function Home() {
   const hello = api.example.hello.useQuery({
@@ -53,12 +54,7 @@ export default function Home() {
         <Link href="/vote">
           <button className={btn}>Vote</button>
         </Link>
-        <Image
-          src="/images/more-nuggets.png"
-          width={620}
-          height={480}
-          alt="nugget"
-        ></Image>
+        <RotatingImage />
         <div className="py-32"></div>
         <div className="">
           <h2 className="text-l font-bold tracking-tight text-white sm:text-[5rem]">
