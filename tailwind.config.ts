@@ -17,7 +17,8 @@ export default {
       'bermuda': '#78dcca',
       'light-nugget': '#fcbb63',
       'dark-nugget': '#882f00',
-      'red': '#ff0b0b'
+      'red': '#ff0b0b',
+      'black': '#000000'
     },
   },
   plugins: [],

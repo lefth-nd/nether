@@ -48,26 +48,29 @@ export default function Home() {
               Explore the chicken nugget world!
             </h2>
           </div>
-          <div className="rounded-md bg-gradient-to-t from-red/[0.3] to-light-nugget/[0.3] p-6 shadow-2xl drop-shadow-lg duration-200 hover:-translate-y-3 hover:skew-x-3">
-            <div className="flex flex-col items-center gap-2">
-              <p className="text-2xl text-white">
-                {hello.data ? hello.data.greeting : "Loading tRPC query..."}
-              </p>
-              <AuthShowcase />
+          <div className="grid grid-cols-2 grid-rows-1 gap-4">
+            <div className="mb-10 mt-10 rounded-md bg-gradient-to-t from-red/[0.3] to-light-nugget/[0.3] p-6 shadow-2xl drop-shadow-lg duration-200 hover:-translate-y-3 hover:skew-x-3">
+              <div className="flex flex-col gap-2 ">
+                <p className="text-2xl text-white">
+                  {hello.data ? hello.data.greeting : "Loading tRPC query..."}
+                </p>
+                <AuthShowcase />
+              </div>
             </div>
-          </div>
-          <div className="rounded-md bg-gradient-to-t from-red/[0.3] to-light-nugget/[0.3] p-6 px-12 shadow-2xl drop-shadow-lg duration-200 hover:translate-y-3 hover:skew-x-3">
-            <div className="flex flex-col items-center gap-2">
-              <p className=" text-2xl text-white">
-                Vote in the chicken nugget competition!
-              </p>
-              <Link href="/vote">
-                <button className={btn}>Vote</button>
-              </Link>
+            <RotatingImage />
+            <RotatingImage />
+            <div className="mb-10 mt-10 rounded-md bg-gradient-to-t from-red/[0.3] to-light-nugget/[0.3] p-6 px-12 shadow-2xl drop-shadow-lg duration-200 hover:translate-y-3 hover:skew-x-3">
+              <div className="flex flex-col items-center gap-2">
+                <p className=" text-2xl text-white">
+                  Vote in the chicken nugget competition!
+                </p>
+                <Link href="/vote">
+                  <button className={btn}>Vote</button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-        <RotatingImage />
         <div className="py-32"></div>
         <div className="">
           <h2 className="text-l animate-bounce font-bold tracking-tight text-white sm:text-[5rem]">
