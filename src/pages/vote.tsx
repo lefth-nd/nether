@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { api } from "~/utils/api";
 
 export default function Vote() {
   const main =
@@ -11,6 +12,9 @@ export default function Vote() {
   const first = "/images/basic-nugget.png";
 
   const second = "/images/pizza.png";
+
+  const name = api.foods.food.useQuery();
+  console.log(name.data);
 
   return (
     <div className={main}>
@@ -35,6 +39,7 @@ export default function Vote() {
           <div className="">
             <Image src={second} width={320} height={320} alt="other"></Image>
           </div>
+          <p>{}</p>
           <button className={btn}>Vote</button>
         </div>
       </div>
