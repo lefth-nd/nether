@@ -5,6 +5,7 @@ import { api } from "~/utils/api";
 import { Timeline } from "~/components/timeline";
 import Image from "next/image";
 import { RotatingImage } from "~/components/rotating-image";
+import Dijkstra from "~/server/bfs";
 
 export default function Home() {
   const hello = api.example.hello.useQuery({
@@ -61,7 +62,7 @@ export default function Home() {
             <RotatingImage />
             <div className="mb-10 mt-10 rounded-md bg-gradient-to-t from-red/[0.3] to-light-nugget/[0.3] p-6 px-12 shadow-2xl drop-shadow-lg duration-200 hover:translate-y-3 hover:skew-x-3">
               <div className="flex flex-col items-center gap-2">
-                <p className=" text-2xl text-white">
+                <p className="text-2xl text-white">
                   Vote in the chicken nugget competition!
                 </p>
                 <Link href="/vote">
@@ -107,6 +108,8 @@ export default function Home() {
     </>
   );
 }
+
+Dijkstra();
 
 function AuthShowcase() {
   const { data: sessionData } = useSession();
